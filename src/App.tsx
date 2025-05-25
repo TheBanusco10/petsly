@@ -1,9 +1,9 @@
 import { Route, Switch } from "wouter";
 import "./App.css";
-import { LoginPage } from "./pages/login/LoginPage";
-import { ConfirmPage } from "./pages/login/ConfirmPage";
-import { DashboardPage } from "./pages/DashboardPage";
-import ProtectedRoute from "./components/ProtectedRoute";
+import { LoginPage } from "./features/auth/pages/LoginPage";
+import { ConfirmPage } from "./features/auth/pages/ConfirmPage";
+import { DashboardPage } from "./shared/pages/DashboardPage";
+import ProtectedRoute from "./shared/components/ProtectedRoute";
 
 export const App = () => {
   const protectedPages = [

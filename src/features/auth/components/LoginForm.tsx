@@ -1,7 +1,7 @@
-import { loginFormValidationSchema } from "../../schemas/auth/loginForm";
-import { supabase } from "../../supabase/client";
-import { GothamForm } from "../Gotham/Form/Form";
-import { GothamField } from "../Gotham/Form/Field";
+import { loginFormValidationSchema } from "../schemas/loginForm";
+import { supabase } from "../../../supabase/client";
+import { GothamForm } from "../../../shared/components/Gotham/Form/Form";
+import { GothamField } from "../../../shared/components/Gotham/Form/Field";
 import { useLocation } from "wouter";
 
 interface FormValues {

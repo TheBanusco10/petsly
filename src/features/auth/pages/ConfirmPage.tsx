@@ -1,5 +1,5 @@
 import { Link } from "wouter"
-import { GothamContainer } from "../../components/Gotham/Container"
+import { GothamContainer } from "../../../shared/components/Gotham/Container"
 
 export const ConfirmPage = () => {
     return (

@@ -1,6 +1,6 @@
+import { LogOutButton } from "../../../features/auth/components/LogOutButton";
 import { useAuth } from "../../hooks/useAuth";
 import { NavbarItem } from "./Navbar/NavbarItem";
-import { LogOutButton } from "../Auth/LogOutButton";
 
 export const GothamNavbar = () => {
     const links = [

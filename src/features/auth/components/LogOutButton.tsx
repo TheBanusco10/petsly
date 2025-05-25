@@ -1,5 +1,5 @@
-import { useAuth } from "../../hooks/useAuth"
-import { NavbarItem } from "../Gotham/Navbar/NavbarItem"
+import { useAuth } from "../../../shared/hooks/useAuth"
+import { NavbarItem } from "../../../shared/components/Gotham/Navbar/NavbarItem"
 
 export const LogOutButton = () => {
     const { logOut } = useAuth();

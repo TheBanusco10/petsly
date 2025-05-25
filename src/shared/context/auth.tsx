@@ -1,16 +1,16 @@
 // src/contexts/AuthContext.jsx
 import { createContext, useEffect, useState } from "react";
-import { supabase } from "../supabase/client";
+import { supabase } from "../../supabase/client";
 import type { Session } from "@supabase/supabase-js";
 
 interface AuthContextType {
-    session: Session | null;
-    logOut: () => void;
+  session: Session | null;
+  logOut: () => void;
 }
 
 const initialValues: AuthContextType = {
-    session: null,
-    logOut: () => { }
+  session: null,
+  logOut: () => { }
 }
 
 export const AuthContext = createContext(initialValues);

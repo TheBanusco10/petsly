@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
-import { LoginForm } from "../../components/Auth/LoginForm"
-import { RegisterForm } from "../../components/Auth/RegisterForm"
-import { GothamContainer } from "../../components/Gotham/Container"
-import { useAuth } from "../../hooks/useAuth"
+import { LoginForm } from "../components/LoginForm"
+import { RegisterForm } from "../components/RegisterForm"
+import { GothamContainer } from "../../../shared/components/Gotham/Container"
+import { useAuth } from "../../../shared/hooks/useAuth"
 import { useLocation } from "wouter"
 
 export const LoginPage = () => {
