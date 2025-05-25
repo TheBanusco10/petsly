@@ -1,7 +1,7 @@
 // src/components/ProtectedRoute.jsx
 import { useLocation } from "wouter";
 import { useEffect } from "react";
-import { useAuth } from "../hooks/useAuth";
+import { useAuth } from "../../hooks/useAuth";
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { session, loading } = useAuth();
@@ -11,7 +11,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
     if (!loading && !session) {
       navigate("/login");
     }
-  }, [loading, session]);
+  }, [loading, session, navigate]);
 
   if (loading || (!session && typeof window !== "undefined")) {
     return <p>Cargando...</p>;

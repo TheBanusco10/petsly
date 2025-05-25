@@ -1,7 +1,11 @@
+import { PetsCarousel } from "../../features/pets/components/PetsCarousel"
+import { GothamContainer } from "../components/Gotham/Container"
+
 export const DashboardPage = () => {
     return (
-        <div>
+        <GothamContainer>
             <h1>Dashboard Page</h1>
-        </div>
+            <PetsCarousel />
+        </GothamContainer>
     )
 }
